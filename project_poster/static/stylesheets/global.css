@@ -1,0 +1,10 @@
+.error {
+    color: red;
+    font-size: 75%;
+}
+.denied {
+    color: red;
+}
+.accepted {
+    color: green;
+}

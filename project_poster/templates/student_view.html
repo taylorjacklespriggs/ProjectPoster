@@ -1,0 +1,16 @@
+<form action="confirmation" method="post">
+<table>
+{% for project in projects %}
+<tr>
+<td>
+<input type="radio" name="project_selection" 
+    id="project_{{ project.number }}"
+    value="{{ project.number }}"/>
+</td>
+<td><b>{{ project.name }}</b></td>
+<td>{{ project.description }}</td>
+</tr>
+{% endfor %}
+</table>
+<input type="submit" value="Submit"/>
+</form>

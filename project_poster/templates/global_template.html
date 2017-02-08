@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ title }}</title>
+    {% for script in scripts %}
+    <script src="{{ script }}"/>
+    {% endfor %}
+    <link rel="stylesheet" type="text/css" href="/static/stylesheets/global.css"/>
+</head>
+<body>
+    <p>{{ banner }}</p>
+    <h1>{{ title }}</h1>
+    {% for link,name in navigation %}
+    <a href="{{ link }}">{{ name }}</a>
+    {% endfor %}
+    <h2 id="subtitle">{{ subtitle }}</h2>
+    {{ body }}
+</body>
+</html>
